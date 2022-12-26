@@ -160,7 +160,7 @@
     <div class="col-sm-7">
       <div class="card">
         <div class="card-body">
-          <a href="#" class="btn btn-primary disabled" id="get-data">Nash ayat</a>
+          <a href="#" class="btn btn-primary disabled" id="get-data">ayat akan tampil</a>
           <div id="show-ayah">
           </div>
         </div>
@@ -355,13 +355,12 @@
 <div id="contact" class="contact">
   <div class="container">
    <div class="row">
-     <div class="col-md-12">
+     <div class="col-md-5">
                 <div class="titlepage">
                   <h2>Contact <strong class="llow">us</strong></h2>
                 </div>
    </div>
 
-   
 </div>
     <div class="white_color">
       <div class="row">
@@ -475,8 +474,29 @@
           <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 
-          <script>
+          
+// This example adds a marker to indicate the position of Baitul Quran in Wonogiri,
+// Indonesian.
+<script>
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 11,
+    center: {
+      lat: 110.92114912668013
+      lng: -7.802464863474283
+    },
+  });
 
+  var image = 'images/maps-and-flags.png';
+  var beachMarker = new google.maps.Marker({
+    position: {
+      lat: 110.92114912668013
+      lng: -7.802464863474283
+    },
+    map: map,
+    icon: image
+  });
+}
 
   $(document).ready(() => {
 

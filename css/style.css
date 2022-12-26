@@ -1307,7 +1307,7 @@ text-align: right;
 
 .clients_red {
      background: #fff;
-     padding-bottom: 50px;
+     padding-bottom: 0px;
      background: url(../images/guh.JPG);
      min-height: 978px;
      background-repeat: no-repeat;
