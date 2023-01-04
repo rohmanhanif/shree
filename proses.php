@@ -24,7 +24,10 @@ if (isset($_POST['submit'])) {
     // Cek koneksi, jika gagal tampilkan pesan kesalahan
     if (!$conn) {
         die("Koneksi gagal: " . mysqli_connect_error());
+    } else {
+        echo "Koneksi berhasil";
     }
+
 
     // Query untuk menambahkan data ke tabel
     $query = "INSERT INTO pendaftar (nama, alamat, tanggal_lahir, jenis_kelamin, asal_sekolah, nama_wali, pendidikan_terakhir, email) VALUES ('$nama', '$alamat', '$tanggalLahir', '$jenisKelamin', '$asalSekolah', '$namaWali', '$pendidikanTerakhir', '$email')";
@@ -43,7 +46,7 @@ if (isset($_POST['submit'])) {
 
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -105,4 +108,4 @@ if (isset($_POST['submit'])) {
     </form>
 </body>
 
-</html>
+</html> -->
